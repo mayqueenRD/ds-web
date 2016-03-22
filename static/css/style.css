@@ -1,0 +1,59 @@
+html { overflow: hidden; }
+body {
+    background-color: #000000;
+    margin: 0;
+}
+div.container {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 960px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+}
+
+div.container_right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 960px;
+    height: 1080px;
+    margin: 0;
+    margin-left: 960px;
+    padding: 0;
+}
+
+div.content {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+div#tnmodel {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1080px;
+}
+div#tnmarquee {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 270px;
+    background-color: #263e72;
+    color: #FFFFFF;
+    font-size: 120pt;
+}
+marquee#tn {
+    width: 100%;
+}
+div#welcome {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 120px;
+}

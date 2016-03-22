@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A simple DIY responsive slideshow made with HTML5, CSS3, and JavaScript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="demo/css/demostyles.css">
+        <link rel="stylesheet" href="css/simple-slideshow-styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="bss-slides num1" tabindex="1" autofocus="autofocus">
+            <figure>
+		      <img src="img/1.jpg" width="100%" height="100%"/><figcaption>"Medium" by <a href="https://www.flickr.com/photos/thomashawk/14586158819/">Wandboard</a>.</figcaption> 
+            </figure>
+            <figure>
+		      <img src="img/2.jpg" width="100%" height="100%"/><figcaption>"Colorado" by <a href="https://www.flickr.com/photos/stuckincustoms/88370744">Trey Ratcliff</a>.</figcaption> 
+            </figure>
+            <figure>
+		      <img src="img/3.jpg" width="100%" height="100%"/><figcaption>"Early Morning at the Monte Vista Wildlife Refuge, Colorado" by <a href="https://www.flickr.com/photos/davesoldano/8572429635">Dave Soldano</a>.</figcaption> 
+            </figure>
+        </div> <!-- // bss-slides -->
+<script src="demo/js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
+<script src="js/better-simple-slideshow.min.js"></script>
+<script>
+var opts = {
+    auto : {
+        speed : 2500, 
+        pauseOnHover : true
+    },
+    fullScreen : false, 
+    swipe : true
+};
+makeBSS('.num1', opts);
+
+var opts2 = {
+    auto : false,
+    fullScreen : true,
+    swipe : true
+};
+makeBSS('.num2', opts2);
+</script>
+</body>
+</html>
